@@ -40,6 +40,7 @@ class Score {
     console.log(`itemId : ${itemId}`);
     const item = findAssetDataById(ASSET_TYPE.ITEM, itemId);
     this.currentScore += item.score * this.scorePerSecond;
+    sendEvent(20, { itemId: itemId });
   }
 
   reset() {
