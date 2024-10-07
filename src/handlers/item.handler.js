@@ -13,7 +13,6 @@ export const obtainItem = (uuid, payload) => {
   const unlockedItems = getItems(uuid).unlockedItems;
   const unlockedItem = unlockedItems.find((item) => {
     item.itemId === payload.itemId;
-    console.log(`serverItemId : ${item.itemId}, clientItemId: ${payload.itemId}`);
   });
 
   if (!unlockedItem) {

@@ -35,6 +35,7 @@ class ItemController {
       const itemUnlock = itemUnlocks.data.find(
         (unlock) => unlock.item_id === this.itemImages[index].id,
       );
+      console.log(`itemUnlock.stage_id : ${itemUnlock.stage_id}, currentStage: ${currentStage}`);
       if (itemUnlock.stage_id <= currentStage) maxIndex = Math.max(maxIndex, index);
     }
 
