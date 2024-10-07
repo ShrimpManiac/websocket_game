@@ -14,7 +14,7 @@
 - 서버 - yarn run dev
 - pm2로 구동할 경우: pm2 start yarn --interpreter bash --name api -- dev
 - 종료 - pm2 list
-- 클라이언트 - shrimpforge.shop:3001/api/url
+- 클라이언트 - shrimpforge.shop:3000/api/url
 
 ## 구현한 기능
 
