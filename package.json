@@ -26,5 +26,6 @@
     "extends": [
       "prettier"
     ]
-  }
+  },
+  "proxy": "http://43.201.34.1:3000"
 }
