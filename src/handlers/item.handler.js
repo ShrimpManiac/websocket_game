@@ -11,7 +11,11 @@ export const obtainItem = (uuid, payload) => {
 
   // 해금된 아이템이 맞는지 검증
   const unlockedItems = getItems(uuid).unlockedItems;
-  const unlockedItem = unlockedItems.find((item) => item.itemId === payload.itemId);
+  const unlockedItem = unlockedItems.find((item) => {
+    item.itemId === payload.itemId;
+    console.log(`serverItemId : ${item.itemId}, clientItemId: ${payload.itemId}`);
+  });
+
   if (!unlockedItem) {
     return { status: 'fail', message: 'Obtained item is not yet unlocked!' };
   }
