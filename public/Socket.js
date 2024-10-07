@@ -1,7 +1,7 @@
 import { CLIENT_VERSION } from './Constants.js';
 import { loadGameAssets } from './Assets.js';
 
-const socket = io('http://localhost:3000', {
+const socket = io('http://43.201.34.1:3000', {
   query: {
     clientVersion: CLIENT_VERSION,
   },
