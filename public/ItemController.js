@@ -53,6 +53,7 @@ class ItemController {
       itemInfo.height,
       itemInfo.image,
     );
+    console.log(item.id);
 
     this.items.push(item);
   }
